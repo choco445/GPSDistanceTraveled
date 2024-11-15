@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_lat"
+        android:layout_width="380dp"
+        android:layout_height="66dp"
+        android:text="Latitude: "
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/id_lon"
+        android:layout_width="378dp"
+        android:layout_height="59dp"
+        android:text="Longitude"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_lat"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/id_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shrimayi's GPS"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_lat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <TextView
+        android:id="@+id/id_address"
+        android:layout_width="375dp"
+        android:layout_height="79dp"
+        android:text="Address: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_lon"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/id_distance"
+        android:layout_width="382dp"
+        android:layout_height="56dp"
+        android:text="Total Distance Traveled: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_address"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/id_timeSpent"
+        android:layout_width="223dp"
+        android:layout_height="54dp"
+        android:text="Time Spent: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_distance"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/id_locationThree"
+        android:layout_width="370dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="36dp"
+        android:text="Location 3: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_locationTwo"
+        android:layout_width="375dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="20dp"
+        android:text="Location 2: "
+        app:layout_constraintBottom_toTopOf="@+id/id_locationThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_locationOne"
+        android:layout_width="377dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="20dp"
+        android:text="Location 1: "
+        app:layout_constraintBottom_toTopOf="@+id/id_locationTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
